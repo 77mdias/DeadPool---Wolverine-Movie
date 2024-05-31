@@ -1,0 +1,341 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
+  \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap);
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/background.css ***!
+  \*****************************************************************************/
+#background {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+}
+
+#background video {
+  filter: blur(2px);
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#background::after {
+  content: "";
+
+  width: inherit;
+  height: inherit;
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    109deg,
+    rgba(10, 12, 16, 0.99) 15%,
+    rgba(10, 12, 16, 0.7) 50%,
+    rgba(10, 12, 16, 0.99) 85%
+  );
+}
+
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/header.css ***!
+  \*************************************************************************/
+header {
+  display: flex;
+  width: 100%;
+  max-width: 1440px;
+  padding: 1.5rem;
+  column-gap: 4rem;
+}
+
+.logo-dead {
+  width: 70px;
+  height: auto;
+}
+
+.navigation {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.navi-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  column-gap: 48px;
+}
+
+.links {
+  text-decoration: none;
+  position: relative;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.links:hover {
+  color: var(--red);
+}
+
+.links:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.4s;
+}
+
+.links::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 60%;
+  height: 1px;
+  background: var(--red);
+  transition: transform 0.4s;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+.navi-social {
+  display: flex;
+  align-items: center;
+  column-gap: 1.5rem;
+  margin-left: auto;
+}
+
+.navi-social a {
+  width: 25px;
+  height: 25px;
+  opacity: 0.6;
+  transition: all 0.4s;
+}
+
+.navi-social ion-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.navi-social a:hover {
+  opacity: 1;
+  transform: translateY(-5px);
+  transition: transform 0.4s;
+}
+
+.menu-mobal-icon {
+  display: none;
+}
+
+.button-menu {
+  background-color: transparent;
+  border: none;
+}
+
+.button-menu img {
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width: 1000px) { 
+  .menu-mobal-icon {
+    display: flex;
+  }
+
+  #content header {
+    justify-content: space-between;
+  }
+}
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/main.css ***!
+  \***********************************************************************/
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.main-info {
+  width: 100%;
+  max-width: 570px;
+  align-items: center;
+}
+
+.main-info p {
+  font-size: 18px;
+  margin: 28px 0 28px;
+}
+
+.main-info div {
+  display: flex;
+  column-gap: 32px;
+}
+
+.main-info div a,
+.main-info div button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  transform: skew(-10deg);
+}
+
+.main-info div a {
+  background: var(--red);
+  transition: color 0.4s;
+}
+
+.main-info div a:hover {
+  color: var(--color-text-black);
+  transition: color 0.6s;
+}
+
+.main-info div button#ingressBtn {
+  background-color: transparent;
+  border: 1px solid var(--yellow);
+  transition: all 0.6s;
+}
+
+.main-info div button#ingressBtn:hover {
+  background-color: var(--yellow);
+  color: var(--color-text-black);
+  cursor: pointer;
+  transition: all 0.6s;
+}
+
+.div-img {
+  width: 100%;
+  height: 86.2vh;
+}
+
+#img-main {
+  filter: opacity(0.57) blur(5px);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all 2s;
+}
+
+#img-main:hover {
+  cursor: none;
+  filter: opacity(0.8) blur(0px);
+  transition: all 2s;
+}
+
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/menuMob.css ***!
+  \**************************************************************************/
+.menu-mobal {
+    display: none;
+    flex-direction: column;
+}
+
+.menu-mobal ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.menu-mobal div {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+}
+
+.menu-mobal ul li{
+    padding: 1.2rem;
+}
+
+.open {
+    display: block;
+    z-index: 10;
+    background-color: #2527288c;
+    padding: 2.4rem;
+    border-radius: 2rem;
+    width: 100%;
+}
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (1) ***!
+  \*********************************************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-text: #edf1f7;
+  --color-text-black: #252728;
+  --red: #c51212;
+  --yellow: #f4bf73;
+  --font: "Roboto Mono", monospace;
+}
+
+body,
+button,
+a {
+  font-family: var(--font);
+  font-style: normal;
+  color: var(--color-text);
+}
+
+a {
+  text-decoration: none;
+}
+
+#content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3rem;
+}
+@media (max-width: 1000px) {
+  .div-img {
+    display: none;
+  }
+
+  main.main {
+    justify-content: center;
+    text-align: center;
+  }
+
+  main.main-info p {
+    font-size: 16px;
+  }
+
+  nav.navigation {
+    display: none;
+  }
+
+  #content header {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-info div.aos-init a,
+  .main-info div.aos-init button {
+    font-size: 12px;
+  }
+
+  .main-info p.aos-init {
+    font-size: 14px;
+  }
+
+  #content header {
+    padding: 0;
+  }
+}
+

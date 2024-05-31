@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DeadPool & Wolverine</title>
+
+    <link href="assets/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <!--VIDEO DE FUNDO or BG=BACKGROUND-->
+    <div id="background">
+      <video loop autoplay muted>
+        <source src="assets/deadpool.mp4" type="video/mp4" />
+      </video>
+    </div>
+
+    <!--MEU CONTAINER or GERAL-->
+    <div id="content">
+      <header>
+        <img
+          src="assets/blender_render.webp"
+          alt="Logo do DeadPool"
+          class="logo-dead"
+        />
+        <nav class="navigation">
+          <ul class="navi-links">
+            <li><a href="#" class="links">Home</a></li>
+            <li><a href="#" class="links">Story</a></li>
+            <li><a href="#" class="links">Wallpapers</a></li>
+            <li>
+              <a
+                href="https://youtu.be/dEbe0rS4Z2A"
+                target="_blank"
+                class="links"
+                >Trailer</a
+              >
+            </li>
+          </ul>
+          <div class="navi-social">
+            <a href="https://instagram.com/77mdias" target="_blank"
+              ><ion-icon name="logo-instagram"></ion-icon
+            ></a>
+            <a href="https://facebook.com/jean.diaslogan.5" target="_blank"
+              ><ion-icon name="logo-facebook"></ion-icon
+            ></a>
+            <a href="https://youtube.com/@77mdias" target="_blank"
+              ><ion-icon name="logo-youtube"></ion-icon
+            ></a>
+            <!--
+              <a href="https://twitter.com/jeandiasccp" target="_blank"
+              ><ion-icon name="logo-twitter"></ion-icon
+            ></a>
+              -->
+            <a href="https://github.com/77mdias" target="_blank"
+              ><ion-icon name="logo-github"></ion-icon
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/jean-carlos-moreira-dias-684040307/"
+              target="_blank"
+              ><ion-icon name="logo-linkedin"></ion-icon
+            ></a>
+          </div>
+        </nav>
+        <div class="menu-mobal-icon">
+          <button class="button-menu">
+            <img class="icon" src="assets/menu_white_36dp.svg" alt="" />
+          </button>
+        </div>
+      </header>
+
+      <div class="menu-mobal">
+        <ul class="navi-links">
+          <li><a href="index.html" class="links">Home</a></li>
+          <li><a href="#" class="links">Story</a></li>
+          <li><a href="#" class="links">Wallpapers</a></li>
+          <li>
+            <a href="https://youtu.be/dEbe0rS4Z2A" target="_blank" class="links"
+              >Trailer</a
+            >
+          </li>
+        </ul>
+        <div class="navi-social">
+          <a href="https://instagram.com/77mdias" target="_blank"
+            ><ion-icon name="logo-instagram"></ion-icon
+          ></a>
+          <a href="https://facebook.com/jean.diaslogan.5" target="_blank"
+            ><ion-icon name="logo-facebook"></ion-icon
+          ></a>
+          <a href="https://youtube.com/@77mdias" target="_blank"
+            ><ion-icon name="logo-youtube"></ion-icon
+          ></a>
+          <!--
+            <a href="https://twitter.com/jeandiasccp" target="_blank"
+            ><ion-icon name="logo-twitter"></ion-icon
+          ></a>
+            -->
+          <a href="https://github.com/77mdias" target="_blank"
+            ><ion-icon name="logo-github"></ion-icon
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/jean-carlos-moreira-dias-684040307/"
+            target="_blank"
+            ><ion-icon name="logo-linkedin"></ion-icon
+          ></a>
+        </div>
+      </div>
+
+      <!--SEÇÃO PRINCIPAL-->
+      <main class="main">
+        <!--INFORMAÇÕES DO FILME-->
+        <div class="main-info">
+          <img
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="800"
+            src="assets/deadpool-wol-movie.png"
+            alt="Logo do Filme de DeadPool & Wolverine"
+            width="270px"
+          />
+          <p data-aos="fade-left" data-aos-delay="400" data-aos-duration="800">
+            Wolverine está se recuperando de seus ferimentos quando cruza o
+            caminho do falastrão Deadpool. Eles se unem para derrotar um inimigo
+            comum. Deadpool & Wolverine promete ser uma aventura épica, cheia de
+            referências aos quadrinhos e momentos de pura adrenalina,
+            proporcionando aos fãs uma experiência única e inesquecível no
+            universo dos super-heróis.
+          </p>
+          <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="600">
+            <a href="https://youtu.be/dEbe0rS4Z2A" target="_blank"
+              >Assistir Trailer</a
+            >
+            <button id="ingressBtn">Comprar Ingresso</button>
+          </div>
+        </div>
+        <div class="div-img">
+          <img
+            data-aos="fade-left"
+            data-aos-delay="400"
+            data-aos-duration="800"
+            src="assets/massa.png"
+            alt=""
+            id="img-main"
+          />
+        </div>
+      </main>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
